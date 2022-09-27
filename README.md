@@ -1,6 +1,4 @@
-## wishing-well-app
-
----
+# Wishing-Well-App
 
 This app provides users to make their own wishes and view wishes made by other people.
 
