@@ -27,4 +27,35 @@ async function displayWishes() {
     }
 }   
 
+async function createWish(e) {
+
+    e.preventDefault();
+
+    // Extract the data into an object
+    const data = {
+        name: e.target.name.value,
+        wish: e.target.wish.value
+    }
+
+    // Set the options for the fetch request
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    }
+
+    // Make a fetch request sending the data
+    const response = await fetch("http://localhost:3000/wishes", options);
+
+    if (response.status == 201) {
+        alert("Current wish created");
+        window.location.reload();
+    }
+}
+
 displayWishes();
+
+const form = document.getElementById('create-wish');
+form.addEventListener('submit', createWish);

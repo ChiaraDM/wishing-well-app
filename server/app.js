@@ -19,5 +19,11 @@ app.get('/wishes', (req, res) => {
     res.send(wishes);
 })
 
+app.post('/wishes', (req, res) => {
+    const newWish = req.body;
+    newWish['id'] = wishes.length;
+    wishes.push(newWish);
+    res.status(201).send(newWish);
+})
 
 module.exports = app;
