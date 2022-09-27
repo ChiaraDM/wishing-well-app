@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-
+const wishes = require('./wishes');
 // Create the app
 const app = express();
 
@@ -14,5 +14,10 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Welcome to my Wishing Well App');
 });
+
+app.get('/wishes', (req, res) => {
+    res.send(wishes);
+})
+
 
 module.exports = app;
