@@ -8,22 +8,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Passions+Conflict&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script defer src="./assets/index.js"></script>
     <title>Wishing Well App</title>
 </head>
 <body>
     <div id="right">
         <h1>Wishing Well App</h1>
-    <form>
-        <label for="name">Enter your name: </label>
-        <br>
-        <input type="text" id="name" name="name" placeholder="name">
-        <br><br>
-        <label for="wish">Make a wish:</label>
-        <br>
-        <textarea name="wish" id="wish" cols="30" rows="10" placeholder="I want to ..."></textarea>
-        <br>
-        <input type="submit">
-    </form>
+        <h3>People's wishes:</h3>
+        <ul id="list-of-wishes">
+
+        </ul>
+        <h3>Add your wish</h3>
+        <form>
+            <label for="name">Enter your name: </label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="name">
+            <br><br>
+            <label for="wish">Make a wish:</label>
+            <br>
+            <textarea name="wish" id="wish" cols="30" rows="10" placeholder="I want to ..."></textarea>
+            <br>
+            <input type="submit">
+        </form>
     </div>
     
 </body>
