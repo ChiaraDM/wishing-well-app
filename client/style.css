@@ -1,0 +1,12 @@
+body { 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    background: lightblue url("/client/images/background.jpg") no-repeat fixed center;
+    background-size: auto 100%;
+    
+}
+
+#right {
+    width: fit-content;
+    float: right;
+    margin-right: 400px;
+}

@@ -4,16 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Delius+Swash+Caps&family=Passions+Conflict&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Wishing Well App</title>
 </head>
 <body>
-    <h1>Wishing Well App</h1>
+    <div id="right">
+        <h1>Wishing Well App</h1>
     <form>
-        <label for="wish">Your wish:</label>
+        <label for="name">Enter your name: </label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="name">
+        <br><br>
+        <label for="wish">Make a wish:</label>
         <br>
         <textarea name="wish" id="wish" cols="30" rows="10" placeholder="I want to ..."></textarea>
         <br>
         <input type="submit">
     </form>
+    </div>
+    
 </body>
 </html>
