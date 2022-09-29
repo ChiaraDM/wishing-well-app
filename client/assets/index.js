@@ -21,9 +21,14 @@ async function displayWishes() {
     for (wish of wishes) {
 
         const element = document.createElement("li");
-        element.textContent = wish["name"] + ": " + wish["wish"];
+        const grantButton = document.createElement("button");
+        const denyButton = document.createElement("button");
+        grantButton.innerHTML = "GRANT";
+        denyButton.innerHTML = "DENY";
+        element.textContent = wish["name"] + " said " + wish["wish"];
         listOfWishes.appendChild(element);
-
+        element.appendChild(grantButton);
+        element.appendChild(denyButton);
     }
 }   
 
